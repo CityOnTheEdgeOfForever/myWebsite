@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 const MongoClient = require('mongodb').MongoClient;
 const dbName = 'emailDB';
-const url = "mongodb+srv://admin-mj:Test123@cluster0-kou5b.mongodb.net/" + dbName;
+
 const myCollection = "emails";
 const client = new MongoClient(url, {
   useNewUrlParser: true
